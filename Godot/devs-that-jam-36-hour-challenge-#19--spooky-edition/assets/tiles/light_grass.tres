@@ -1,9 +1,9 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://cp5jssf0xkolk"]
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://i1tjn3iyda6i"]
 
-[ext_resource type="Texture2D" uid="uid://bm26wjhga2ycj" path="res://assets/tiles/tileset/dark_grass.png" id="1_wevy8"]
+[ext_resource type="Texture2D" uid="uid://b2mcd2df00q3o" path="res://assets/tiles/tileset/light_grass.png" id="1_730fq"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1tj1e"]
-texture = ExtResource("1_wevy8")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uwg5j"]
+texture = ExtResource("1_730fq")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -47,4 +47,4 @@ texture = ExtResource("1_wevy8")
 5:7/0 = 0
 
 [resource]
-sources/1 = SubResource("TileSetAtlasSource_1tj1e")
+sources/0 = SubResource("TileSetAtlasSource_uwg5j")

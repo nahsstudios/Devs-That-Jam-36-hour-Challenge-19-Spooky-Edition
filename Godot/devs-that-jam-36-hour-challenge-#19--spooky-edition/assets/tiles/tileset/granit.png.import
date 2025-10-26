@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://35hp31lkox5i"
-path="res://.godot/imported/stone.png-4b8aa97be67e2fe962bd4e6467740b7d.ctex"
+uid="uid://dyf1khw0suyo6"
+path="res://.godot/imported/granit.png-226798d9643730b833958b7511094805.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/tile-img/stone.png"
-dest_files=["res://.godot/imported/stone.png-4b8aa97be67e2fe962bd4e6467740b7d.ctex"]
+source_file="res://assets/tiles/tileset/granit.png"
+dest_files=["res://.godot/imported/granit.png-226798d9643730b833958b7511094805.ctex"]
 
 [params]
 
