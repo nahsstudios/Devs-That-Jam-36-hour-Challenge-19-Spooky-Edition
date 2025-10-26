@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cygvni108tt03"]
+
+[ext_resource type="Shape2D" uid="uid://be6y5k7wmmtmk" path="res://assets/shapes/tumbstone.tres" id="1_2vq68"]
+
+[node name="Caja" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = ExtResource("1_2vq68")

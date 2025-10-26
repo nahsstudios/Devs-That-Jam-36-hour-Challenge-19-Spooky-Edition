@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var sprite = $AnimatedSprite2D
 @export var speed: float = 150.0
+@export var thrown_object_scene: PackedScene  # asigna el ThrownObject.tscn en el inspector
 
 var move_animations = {
 	Vector2.LEFT: ["walk_left", false],
@@ -26,6 +27,7 @@ var idle_animations = {
 }
 
 var last_direction = Vector2.DOWN
+var can_move_object = false  # Nueva variable para detectar si puede mover el objeto
 
 func _physics_process(_delta: float) -> void:
 	# -----------------------
@@ -62,3 +64,38 @@ func _physics_process(_delta: float) -> void:
 	# Orden de dibujo según Y
 	# -----------------------
 	z_index = int(position.y)
+
+	# -----------------------
+	# Detectar si puede mover objeto
+	# -----------------------
+	check_object_proximity()
+
+	# -----------------------
+	# Cambiar color del sprite según si puede mover objeto
+	# -----------------------
+	if can_move_object:
+		sprite.modulate = Color.RED
+	else:
+		sprite.modulate = Color.WHITE
+
+	# -----------------------
+	# Lanzar objeto
+	# -----------------------
+	if Input.is_action_just_pressed("ui_accept") and thrown_object_scene:
+		launch_object(last_direction)
+
+# Función para lanzar el objeto
+func launch_object(direction: Vector2) -> void:
+	var obj_instance = thrown_object_scene.instantiate()
+	get_parent().add_child(obj_instance)
+	obj_instance.global_position = global_position
+	obj_instance.throw_object(direction)
+
+# Nueva función para detectar si hay objeto cercano
+func check_object_proximity():
+	can_move_object = false
+	for obj in get_parent().get_children():
+		if obj.is_in_group("movable_object"):  # el objeto debe estar en este grupo
+			if global_position.distance_to(obj.global_position) < 50:  # radio de detección
+				can_move_object = true
+				break
