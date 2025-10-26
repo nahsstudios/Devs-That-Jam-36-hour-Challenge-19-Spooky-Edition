@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://6ult7yt44ldc"]
+[gd_scene load_steps=11 format=4 uid="uid://6ult7yt44ldc"]
 
 [ext_resource type="TileSet" uid="uid://cp5jssf0xkolk" path="res://assets/tiles/dark_grass_tile_set.tres" id="1_ofkse"]
 [ext_resource type="TileSet" uid="uid://doivxrme44bw6" path="res://assets/tiles/granit_tile_set.tres" id="2_h0862"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dpf7cv0fqscua" path="res://scenes/objects/ThrownObject.tscn" id="7_h0862"]
 [ext_resource type="PackedScene" uid="uid://cygvni108tt03" path="res://scenes/objects/box.tscn" id="8_w4qqr"]
 [ext_resource type="Texture2D" uid="uid://bwiqxucq4j3c2" path="res://assets/sprites/Bones_shadow1_1.png" id="9_7pcry"]
+[ext_resource type="Texture2D" uid="uid://chjdxkgrhtg4s" path="res://assets/sprites/Ruin_shadow2_3.png" id="10_1g8p7"]
 
 [node name="World" type="Node2D"]
 
@@ -89,3 +90,7 @@ position = Vector2(-368, 14)
 [node name="BonesShadow11" type="Sprite2D" parent="."]
 position = Vector2(95, 249)
 texture = ExtResource("9_7pcry")
+
+[node name="RuinShadow23" type="Sprite2D" parent="."]
+position = Vector2(143, 32)
+texture = ExtResource("10_1g8p7")
