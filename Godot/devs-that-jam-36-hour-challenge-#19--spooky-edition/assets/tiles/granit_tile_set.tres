@@ -1,0 +1,47 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://doivxrme44bw6"]
+
+[ext_resource type="Texture2D" uid="uid://dyf1khw0suyo6" path="res://assets/tiles/tile-img/granit.png" id="1_3xyi4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mc7p1"]
+texture = ExtResource("1_3xyi4")
+2:4/0 = 0
+1:4/0 = 0
+1:5/0 = 0
+2:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+2:5/0 = 0
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+6:2/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+0:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+2:7/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_mc7p1")
