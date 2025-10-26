@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://djrx5y141oud4"]
+
+[ext_resource type="SpriteFrames" uid="uid://c0xtel5vkm0aa" path="res://assets/sprites/car-pickup/pickup_black.tres" id="1_cglpl"]
+[ext_resource type="Script" uid="uid://1rlmn3nrtn3g" path="res://scripts/car.gd" id="1_xslyb"]
+[ext_resource type="Shape2D" uid="uid://bfhlfl88l1ghu" path="res://assets/shapes/car.tres" id="3_rpihp"]
+
+[node name="CarPickup" type="StaticBody2D"]
+position = Vector2(-1, -1)
+script = ExtResource("1_xslyb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, 15)
+sprite_frames = ExtResource("1_cglpl")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(6, 12)
+polygon = PackedVector2Array(-34, -18, -15, -20, 3, -12, 28, 7, 38, 23, 7, 40, -33, 10, -33, 3, -47, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0)
+shape = ExtResource("3_rpihp")
+disabled = true

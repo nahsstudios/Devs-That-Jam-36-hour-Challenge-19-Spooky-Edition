@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxg8o2qv1dubb"]
+
+[ext_resource type="Script" uid="uid://cr8g2hx2c6vkp" path="res://scripts/player.gd" id="1_3li8b"]
+[ext_resource type="SpriteFrames" uid="uid://c04rw5rak50dq" path="res://assets/sprites/16x32 Idle-Sheet.tres" id="2_3li8b"]
+[ext_resource type="Shape2D" uid="uid://cwjbk33xsc0b7" path="res://assets/shapes/player.tres" id="2_524rm"]
+[ext_resource type="Texture2D" uid="uid://dnpdlqbchjgwa" path="res://assets/sprites/shadow.png" id="2_mdl7e"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_3li8b")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.45490196)
+position = Vector2(1.1920929e-07, 15)
+scale = Vector2(0.6875, 0.31250003)
+texture = ExtResource("2_mdl7e")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_3li8b")
+animation = &"walk_left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13)
+scale = Vector2(1, 0.2)
+shape = ExtResource("2_524rm")
