@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpdeb0qkgw5b0"
-path="res://.godot/imported/granit.png-7900701e27bd42c7a381fa8e701c3adf.ctex"
+path="res://.godot/imported/granit.png-129d6b3b43aae81c82c69a88f57cb0ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/walls/granit.png"
-dest_files=["res://.godot/imported/granit.png-7900701e27bd42c7a381fa8e701c3adf.ctex"]
+source_file="res://assets/Tiles/walls/granit.png"
+dest_files=["res://.godot/imported/granit.png-129d6b3b43aae81c82c69a88f57cb0ce.ctex"]
 
 [params]
 
