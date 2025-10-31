@@ -8,3 +8,4 @@
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = ExtResource("1_2vq68")
+disabled = true

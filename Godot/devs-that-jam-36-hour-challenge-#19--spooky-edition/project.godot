@@ -15,6 +15,11 @@ run/main_scene="uid://6ult7yt44ldc"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [input]
 
 ui_up={
@@ -34,5 +39,9 @@ ui_down={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+lights_and_shadows/canvas_textures/default_texture_filter=1
+lights_and_shadows/size/viewport_height=648
+lights_and_shadows/size/viewport_width=1152

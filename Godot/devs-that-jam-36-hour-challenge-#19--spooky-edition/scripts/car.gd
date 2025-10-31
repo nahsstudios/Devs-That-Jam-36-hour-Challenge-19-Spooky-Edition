@@ -8,6 +8,7 @@ func _ready():
 	if anim:
 		anim.play("default")
 
+@warning_ignore("unused_parameter")
 func _process(delta):
 	# Actualiza el z_index según la posición Y del nodo principal
 	# Esto asegura que el auto se dibuje delante o detrás del jugador

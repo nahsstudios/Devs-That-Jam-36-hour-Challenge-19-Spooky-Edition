@@ -19,4 +19,3 @@ polygon = PackedVector2Array(-34, -18, -15, -20, 3, -12, 28, 7, 38, 23, 7, 40, -
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 0)
 shape = ExtResource("3_rpihp")
-disabled = true
