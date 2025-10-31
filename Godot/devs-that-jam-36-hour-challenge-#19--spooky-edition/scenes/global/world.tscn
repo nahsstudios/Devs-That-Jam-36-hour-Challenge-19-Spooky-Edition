@@ -61,3 +61,5 @@ position = Vector2(76, -62)
 
 [node name="Caja" parent="Caja/Caja/Caja/Caja/Caja" instance=ExtResource("8_w4qqr")]
 position = Vector2(-368, 14)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
